@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import "./App.css"
 import * as ReactBootStrap from "react-bootstrap";
-import DankMemes from "./Components/DankMemes";
-import Features from "./Components/Features";
-import Pricing from "./Components/Pricing";
-import MoreDeets from "./Components/MoreDeets";
-import NavBar from "./Components/Navbar"
+import DankMemes from "./component/Dankmemes";
+import Navbar from "./component/Navbar";
+import Pricing from "./component/Pricing";
+import MoreDeets from "./component/MoreDeets";
+import Features from "./component/Features";
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,32 +14,34 @@ import {
 } from "react-router-dom";
 
 
-function App() {
-  return (
-    <div className="App">
-        <Router>
-        <NavBar />
- 
+
+
+
+const NavBar = () => {
+    return(
+        <div className="App">
+            <Router>
+            <Navbar />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/features" component={Features}>
-              <Features />
+          <Route path="/Features" component={Features}>
+            <Features />
           </Route>
-          <Route path="/pricing" component={Pricing}>
+          <Route path="/Pricing" component={Pricing}>
             <Pricing />
           </Route>
-          <Route path="/deets" component={MoreDeets}>
+          <Route path="/Moredeets" component={MoreDeets}>
             <MoreDeets />
           </Route>
-          <Route path="/dankmemes" component={DankMemes}>
+          <Route path="/Dankmemes" component={DankMemes}>
             <DankMemes />
           </Route>
         </Switch>
     </Router>
-    </div>
-  );
+        </div>
+    )
 }
 
-export default App;
+export default NavBar;

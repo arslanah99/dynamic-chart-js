@@ -1,9 +1,12 @@
 import React from 'react';
+import "../App.css"
 import * as ReactBootStrap from "react-bootstrap";
 import {
     BrowserRouter as Router,
     Link
-  } from "react-router-dom";
+} from 'react-router-dom';
+
+
 
 const NavBar = () => {
     return(
@@ -13,10 +16,10 @@ const NavBar = () => {
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="mr-auto"> 
-    <Link to="/features">
+    <Link to="/Features">
     <ReactBootStrap.Nav.Link href="#features">Features</ReactBootStrap.Nav.Link>
     </Link>
-    <Link to="/pricing">
+    <Link to="/Pricing">
     <ReactBootStrap.Nav.Link href="#pricing">Pricing</ReactBootStrap.Nav.Link>
     </Link>
       <ReactBootStrap.NavDropdown title="YEET" id="collasible-nav-dropdown">
@@ -28,14 +31,14 @@ const NavBar = () => {
       </ReactBootStrap.NavDropdown>
     </ReactBootStrap.Nav>
     <ReactBootStrap.Nav>
-    <Link to="/deets">
+    <Link to="/Moredeets">
     <ReactBootStrap.Nav.Link href="#deets">More deets</ReactBootStrap.Nav.Link>
     </Link>
-    <Link to="/dankmemes">
+    <Link to="/Dankmemes">
     <ReactBootStrap.Nav.Link eventKey={2} href="#memes">
         Dank memes
       </ReactBootStrap.Nav.Link>
-    </Link>
+      </Link>
     </ReactBootStrap.Nav>
   </ReactBootStrap.Navbar.Collapse>
 </ReactBootStrap.Navbar>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MoreDeets = () => {
+const Dankmemes = () => {
     return(
         <div className="App">
-            <h1>MoreDeets HOURS</h1>
+            <h1>Dankmemes</h1>
         </div>
     )
 }
 
-export default MoreDeets;
+export default Dankmemes;

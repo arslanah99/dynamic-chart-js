@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Feature = () => {
+const MoreDeets = () => {
     return(
         <div className="App">
-            <h1>Feature HOURS</h1>
+            <h1>MoreDeets</h1>
         </div>
     )
 }
 
-export default Feature;
+export default MoreDeets;
